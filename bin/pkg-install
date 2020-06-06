@@ -1,0 +1,7 @@
+local component = require("component")
+local fs = require("filesystem")
+local internet = require("internet")
+local shell = require("shell")
+local text = require("text")
+
+require("shell").execute("cd /bin/pkgl/")
