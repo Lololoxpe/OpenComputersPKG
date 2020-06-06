@@ -1,0 +1,9 @@
+local component = require("component")
+local fs = require("filesystem")
+local internet = require("internet")
+local shell = require("shell")
+local text = require("text")
+
+io.write("Usage: pkg-update to update list of available packages.\n")
+io.write("List:\n")
+io.write("mc\n")

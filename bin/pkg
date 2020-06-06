@@ -1,0 +1,19 @@
+local component = require("component")
+local fs = require("filesystem")
+local internet = require("internet")
+local shell = require("shell")
+local text = require("text")
+ 
+if not component.isAvailable("internet") then
+  io.stderr:write("This program requires an internet card to run.")
+  return
+end
+ 
+io.write("pkg tool 1.0 (Lua 5.2)\n")
+io.write("Usage: pkg-[command]\n")
+io.write("Example: pkg-install [package name]\n")
+io.write("Commands list:\n")
+io.write(" list - list packages.\n")
+io.write(" install - install packages.\n")
+io.write(" remove - remove packages.")
+io.write(" update - update list of available packages.")
